@@ -1,6 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Spline from '@splinetool/react-spline';
+
+function SplineScene() {
+  return (
+    <Spline scene="https://prod.spline.design/lq95QB7HYrHkZhh1/scene.splinecode" />
+  );
+}
 
 function App() {
   return (
@@ -19,6 +26,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <SplineScene />
     </div>
   );
 }
