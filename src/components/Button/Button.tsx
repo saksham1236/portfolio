@@ -1,16 +1,35 @@
+
 import "./Button.scss";
+import { PropsWithChildren } from "react";
 
-type buttonType = {
-    icon: string,
-    label:string,
-    link: string
+//Importing Dependecies
+import { ReactSVG } from "react-svg";
+import { Link, To } from "react-router-dom";
+import { Children, ReactNode } from "react";
+import { JSXElement } from "@babel/types";
+
+//Types
+type buttonProps = {
+    icon?: string,
+    imgAlt?: string,
+    link?: To,
+    label: string
 }
 
-export default function Button(props: buttonType) {
-    const {icon, label, link} = props;
-    return (
-        <link>
-            <button className="button">{label}</button>
-        </link>
-    )
+export default function Button(props: buttonProps) {
+    const {icon, link, label, imgAlt} = props;
+    if(icon){
+        if(link){
+            return <Link to = {link} className="button"><button className="button__inner">{label}<img alt = {imgAlt} className="button__inner__icon" src = {icon} /></button></Link>
+        } else {
+            return <div className="button"><button className="button__inner">{label}<img alt = {imgAlt} className="button__inner__icon" src = {icon} /></button></div>
+        }
+    } else {
+        if(link){
+            return <Link to = {link} className="button"><button className="button__inner">{label}</button></Link>
+        } else {
+            return <div className="button"><button className="button__inner">{label}</button></div>
+        }
+    }
 }
+

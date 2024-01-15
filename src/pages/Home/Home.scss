@@ -1,0 +1,28 @@
+.home {
+    display: flex;
+    padding-top: 0;
+
+    &__highlight{
+        display: inherit;
+        flex: 1 1 auto;
+        gap: 1rem;
+        &__secondary {
+            display: inherit;
+            flex-direction: column;
+            flex: 1 1 auto;
+            gap: 1rem;
+        
+        &__grid{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        }
+
+        & .icon-skill{
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+}
