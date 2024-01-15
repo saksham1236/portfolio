@@ -1,3 +1,5 @@
+@use "../../styles/partials/abstracts" as*;
+
 .home {
     display: flex;
     padding-top: 0;
@@ -6,6 +8,10 @@
         display: inherit;
         flex: 1 1 auto;
         gap: 1rem;
+        flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+        }
         &__secondary {
             display: inherit;
             flex-direction: column;
@@ -22,6 +28,18 @@
         & .icon-skill{
             height: 4rem;
             width: 4rem;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+            filter: contrast(130%);
+            &:hover {
+                opacity: 0.65;
+            }
+            &:active {
+                outline: 2px solid lightblue;
+                outline-offset: 2px;
+                filter: contrast(130%) grayscale(0.35) brightness(1.2) ;
+                opacity: 1;
+            }
         }
     }
 

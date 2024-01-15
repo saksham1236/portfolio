@@ -5,6 +5,18 @@ body, input, button {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+p {
+    line-height: 175%;
+}
+
+body :is(h1, h2, h3, h4, h5){
+    line-height: 135%;
+}
+
 .secondary {
     color: var(--text-secondary);
+}
+
+.large {
+    font-size: 1.25rem;
 }
