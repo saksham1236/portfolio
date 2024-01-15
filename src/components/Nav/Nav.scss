@@ -18,12 +18,19 @@ nav, .nav {
 
     &__logo {
         &__icon {
-            height: 2.5rem;
+            height: 2rem;
+            @include tablet {
+                height: 2.5rem;
+            }
         }
     }
 
     &__links {
-        display: inherit;
+        display: none;
+
+        @include tablet {
+            display: inherit;
+        }
         &__list {
             display: inherit;
             list-style: none;
