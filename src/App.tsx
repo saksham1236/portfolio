@@ -1,7 +1,7 @@
 //Importing Styles
 import "./styles/global.scss";
 //Importing dependencies
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 //Importing Components
 import Nav from "./components/Nav/Nav";
@@ -11,7 +11,7 @@ import Home from "./pages/Home/Home";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<section className='nav-container'>
 				<Nav />
 			</section>
@@ -21,7 +21,7 @@ function App() {
 					element={<Home />}
 				/>
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
