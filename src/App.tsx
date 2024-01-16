@@ -20,6 +20,10 @@ function App() {
 					path='/'
 					element={<Home />}
 				/>
+				{/* <Route
+					path='/'
+					element={<About />}
+				/>				 */}
 			</Routes>
 		</HashRouter>
 	);

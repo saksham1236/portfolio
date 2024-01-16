@@ -4,7 +4,8 @@
   "homepage": "https://saksham1236.github.io/portfolio",
   "private": true,
   "dependencies": {
-    "@splinetool/runtime": "^1.0.17",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.0.28",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,6 +16,7 @@
     "pnpm": "^8.14.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pro-sidebar": "^1.1.0-alpha.1",
     "react-router-dom": "^6.21.2",
     "react-scripts": "5.0.1",
     "react-svg": "^16.1.32",

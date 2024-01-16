@@ -1,6 +1,7 @@
 import CardXL from "../../components/CardXL/CardXL";
 import Card from "../../components/Card/Card";
 import Button from "../../components/Button/Button";
+import Hero from "../../components/Hero/Hero";
 import arrowUpIcon from "../../assets/icons/north_east_FILL0_wght400_GRAD0_opsz24.svg";
 import arrowForward from "../../assets/icons/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg"
 import { Icon } from "@iconify/react";
@@ -12,6 +13,7 @@ export default function Home() {
 		<section className='home'>
 			<div className='home__highlight'>
 				<CardXL>
+					<Hero />
 					<h1>Designing, Developing, and Creating</h1>
                     <p className="large secondary">
                         Versatile designer and aspiring software developer, blending creativity from Motion Design and Scientific Illustration with expertise in User Experience Design to craft innovative and functional digital solutions.
