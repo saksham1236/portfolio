@@ -1,0 +1,43 @@
+.button {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    border-radius: 0.85rem;
+    transition: all 0.3s ease;
+    width: fit-content;
+    width: -moz-fit-content;
+
+    &__inner {
+        display: flex;
+        padding: 0.625rem 1rem;
+        background-color:var(--primary);
+        border: none;
+        border-radius: 0.85rem;
+        transition: inherit;
+        gap: 0.25rem;
+        align-items: center;
+        &:hover{
+            background-color:var(--primary-hover);
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: var(--primary-clicked);
+            outline: 2px solid lightblue;
+            outline-offset: 2px;
+        }
+
+        &__icon {
+            fill: var(--text);
+            display: flex;
+            align-items: center;
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+    }
+
+    &:hover {
+        background-color:var(--primary-hover);
+    }
+}

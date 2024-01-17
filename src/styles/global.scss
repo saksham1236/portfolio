@@ -1,0 +1,19 @@
+@use "./partials/reset" as*;
+@use "./partials/abstracts" as*;
+@use "./partials/grids" as*;
+@use "./partials/fonts" as*;
+
+//Variables
+:root {
+    --primary:#7C2AFF;
+    --primary-hover: #4D1B9C;
+    --primary-clicked: #B586FF;
+    --background: #101010;
+    --container: #232226;
+    --text: #fff;
+    --text-secondary: #645B72;
+}
+
+body {
+    background-color: var(--background);
+}

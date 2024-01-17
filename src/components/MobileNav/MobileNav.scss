@@ -1,0 +1,45 @@
+@use "../../styles/partials/abstracts" as*;
+
+.nav-mobile {
+    display: flex;
+    @include tablet {
+        display: none;
+    }
+        &__links{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        gap: 0.5rem;
+        padding: 2rem 2rem;
+        top: 0;
+        right: -100%;
+        align-items: flex-end;
+        background-color: var(--background);
+        height: 100dvh;
+        transition: all 0.3s ease;
+        z-index: 2;
+        transition: all 0.3s ease;
+        width: 100%;
+        &-active {
+            @extend .nav-mobile__links;
+            right: 0;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--container);
+            padding: 1rem;
+            width: 100%;
+            gap: 1rem;
+            border-radius: 1.5rem;
+            & .button, & .button__inner {
+                height: 4rem;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+}
+

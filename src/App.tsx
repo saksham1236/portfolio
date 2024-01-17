@@ -1,34 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Spline from '@splinetool/react-spline';
+//Importing Styles
+import "./styles/global.scss";
+//Importing dependencies
+import { HashRouter, Routes, Route } from "react-router-dom";
 
-function SplineScene() {
-  return (
-    <Spline scene="https://prod.spline.design/lq95QB7HYrHkZhh1/scene.splinecode" />
-  );
-}
+//Importing Components
+import Nav from "./components/Nav/Nav";
+
+//Importing Pages
+import Home from "./pages/Home/Home";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <SplineScene />
-    </div>
-  );
+	return (
+		<HashRouter>
+			<section className='nav-container'>
+				<Nav />
+			</section>
+			<Routes>
+				<Route
+					path='/'
+					element={<Home />}
+				/>
+				{/* <Route
+					path='/'
+					element={<About />}
+				/>				 */}
+			</Routes>
+		</HashRouter>
+	);
 }
 
 export default App;
