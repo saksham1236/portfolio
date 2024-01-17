@@ -1,9 +1,14 @@
+@use "../../styles/partials/abstracts" as*;
+
 .hero {
     display: flex;
     position: relative;
     flex: 1 1 auto;
-    height:12rem;
-    min-height: 6rem;
+    max-height: 7rem;
+
+    @include tablet {
+        max-height: 12rem;
+    }
 
     &-gradient {
         display: flex;
@@ -17,4 +22,6 @@
         bottom: 0;
         background: linear-gradient(0deg, rgba(35,34,38,1) 0%, rgba(35,34,38,0) 29%, rgba(35,34,38,0) 71%, rgba(35,34,38,1) 100%);
     }
+
+
 }
